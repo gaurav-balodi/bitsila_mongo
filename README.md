@@ -14,6 +14,11 @@ https://magicpin.in/Hyderabad/Miyapur/Restaurant/Chef-Bakers/store/55b016/delive
 
 Scrape restaurant Data for the given set of URLs(these can be added from backend on a regular basis) from either Swiggy | Zomato | MagicPin and Store it in the Database. Any two sources you can choose to scrape the data. If more URLs are added, it should fetch the data for those restaurants and store it automatically. At a high level you'll be storing the data in Location, Restaurant, Category and Products | Order / Order Items Tables or whatever you think it's appropriate. Keep the data in sync with all the URLs on a weekly basis or on a need basis manual sync can be initiated. Whenever Store Catalog is updated, merge with the latest data. See if you can avoid not creating duplicate Stores across all the URLs.
 
+## Crawlers
+
+1. Crawlers are put in the app/crawlers folder
+2. For each of the crawlers another folder called pages has been put inside the app/crawlers folder, to better deal details from pages parsed from the zomato, swiggy etc. sources
+
 ### Develop APIs for the following:
 1. Discovering the Restaurants by Location | Type of Restaurant
 2. Show Restaurant’s Categories with no. of items, avg price, min and max price of that category items
